@@ -1,6 +1,6 @@
 # 第2回：最初のキューブタワーを作ろう！
 
-![CubicPy Logo](https://creativival.github.io/CubicPy/assets/cubicpy_logo.png)
+![CubicPy Logo](https://creativival.github.io/CubicPyCode/assets/cubicpy_logo.png)
 
 ## 今日のミッション
 **自分の手でプログラミングしたタワーを作って、崩す快感を味わおう！**
@@ -23,7 +23,7 @@
 
 VSCodeでPythonプログラミングを快適に行うには、いくつかの拡張機能が必要です。以下の手順でインストールしましょう。
 
-![VSCode Python Extension](https://creativival.github.io/CubicPy/assets/vscode_python_extension.png)
+![VSCode Python Extension](https://creativival.github.io/CubicPyCode/assets/vscode_python_extension.png)
 
 **▲図1▲ VSCodeのPython拡張機能**
 
@@ -57,7 +57,7 @@ VSCodeでCubicPyCodeフォルダを開いたら、新しいPythonファイルを
 
 #### 方法1：エクスプロラービューから作成する
 
-![VSCode New File](https://creativival.github.io/CubicPy/assets/vscode_new_file.png)
+![VSCode New File](https://creativival.github.io/CubicPyCode/assets/vscode_new_file.png)
 
 **▲図2▲ VSCodeで新しいファイルを作成する**
 
@@ -87,7 +87,7 @@ cubicpy my_first_cube.py
 3. Enterキーを押して実行する
 4. 何も配置されていない3D空間が表示されたら、成功です（▲図3▲）。my_first_cube.pyにはまだ何も書かれていないため、物体は何も表示されていません。
 
-![Run empty file](https://creativival.github.io/CubicPy/assets/cubicpy_run_empty_file.png)
+![Run empty file](https://creativival.github.io/CubicPyCode/assets/cubicpy_run_empty_file.png)
 
 **▲図3▲ 3D空間を作成する**
 
@@ -132,7 +132,7 @@ body_data.append({
 cubicpy my_first_cube.py
 ```
 
-![Single Cube](https://creativival.github.io/CubicPy/assets/single_cube.png)
+![Single Cube](https://creativival.github.io/CubicPyCode/assets/single_cube.png)
 
 **▲図4▲ 最初の一つの赤い箱**
 
@@ -161,7 +161,7 @@ body_data.append({
 cubicpy my_first_cube.py
 ```
 
-![Flat Single Cube](https://creativival.github.io/CubicPy/assets/flat_single_cube.png)
+![Flat Single Cube](https://creativival.github.io/CubicPyCode/assets/flat_single_cube.png)
 
 **▲図5▲ 空中に配置した緑の箱**
 
@@ -202,7 +202,7 @@ body_data.append({
 })
 ```
 
-![Three Cubes](https://creativival.github.io/CubicPy/assets/three_cubes.png)
+![Three Cubes](https://creativival.github.io/CubicPyCode/assets/three_cubes.png)
 
 **▲図6▲ 横一列に並んだ3つの箱**
 
@@ -232,7 +232,7 @@ for i in range(10):
 
 このコードの中の `for i in range(10):` という部分が魔法の呪文です！「0から9までの数字を順番に変数iに入れて、その下の処理を繰り返す」という意味です。
 
-![Red Cube Tower](https://creativival.github.io/CubicPy/assets/red_cube_tower.png)
+![Red Cube Tower](https://creativival.github.io/CubicPyCode/assets/red_cube_tower.png)
 
 **▲図7▲ 10段の赤い箱タワー**
 
@@ -260,7 +260,7 @@ for i in range(10):
 
 色の部分が変わりましたね！`(i/10, 0, 1-i/10)` という部分で、iの値によって色が変化します。iが0のとき(0, 0, 1)で青、iが9のとき(0.9, 0, 0.1)で赤に近い色になります。
 
-![Rainbow Tower](https://creativival.github.io/CubicPy/assets/cube_tower.png)
+![Rainbow Tower](https://creativival.github.io/CubicPyCode/assets/cube_tower.png)
 
 **▲図8▲ 色が変化するキューブタワー**
 
@@ -281,7 +281,7 @@ for i in range(10):
 - **R**: リセット
 - **ESC**: 終了
 
-![Falling Tower](https://creativival.github.io/CubicPy/assets/breaking_cube_tower.png)
+![Falling Tower](https://creativival.github.io/CubicPyCode/assets/breaking_cube_tower.png)
 
 **▲図9▲ 傾いた地面で崩れていくタワー**
 
@@ -321,7 +321,7 @@ for i in range(10):
     })
 ```
 
-![Mixed Shapes](https://creativival.github.io/CubicPy/assets/two_towers.png)
+![Mixed Shapes](https://creativival.github.io/CubicPyCode/assets/two_towers.png)
 
 **▲図10▲ ２つのレインボータワー**
 
@@ -359,7 +359,7 @@ body_data.append({
 })
 ```
 
-![Mixed Shapes](https://creativival.github.io/CubicPy/assets/mixed_shapes.png)
+![Mixed Shapes](https://creativival.github.io/CubicPyCode/assets/mixed_shapes.png)
 
 **▲図11▲ 箱、球、円柱を組み合わせた作品**
 
@@ -397,7 +397,7 @@ VSCodeには、Pythonプログラミングを助ける便利な機能がたく�
 4. **コード整形**: 右クリックメニューから「ドキュメントのフォーマット」を選ぶとコードが整形されます
 5. **複数行コメント**: 選択した行を`Ctrl+/`（Mac: `Cmd+/`）でまとめてコメントアウトできます
 
-![VSCode Features](https://creativival.github.io/CubicPy/assets/vscode_features.png)
+![VSCode Features](https://creativival.github.io/CubicPyCode/assets/vscode_features.png)
 
 **▲図12▲ VSCodeの便利な機能**
 

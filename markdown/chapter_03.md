@@ -1,6 +1,6 @@
 # 第3回：様々な形の3D建築を作ろう！
 
-![CubicPy Logo](https://creativival.github.io/CubicPy/assets/cubicpy_logo.png)
+![CubicPy Logo](https://creativival.github.io/CubicPyCode/assets/cubicpy_logo.png)
 
 ## 今日のミッション
 **Pythonコードと数学の知識を使って、幾何学形状の建物を作れる魔法を学ぼう！**
@@ -75,20 +75,20 @@ for j in range(height):
    
 2. **円の計算**: 円周上に箱を並べるには、三角関数（サイン・コサイン）を使います。三角関数と角度を使って、 (x, y) の位置を計算できます（▲図1▲）。
 
-![Cube Position](https://creativival.github.io/CubicPy/assets/cube_position.png)
+![Cube Position](https://creativival.github.io/CubicPyCode/assets/cube_position.png)
 
 **▲図1▲ 角度からキューブの位置を計算する**
 
 3. **偶数段と奇数段**: `if j % 2 == 0:` の部分で、偶数段と奇数段で箱の位置をずらしています。これによって、箱が交互に積み上がります（▲図2▲）。
 
-![Stacking Cubes](https://creativival.github.io/CubicPy/assets/how_to_stack_cubes.png)
+![Stacking Cubes](https://creativival.github.io/CubicPyCode/assets/how_to_stack_cubes.png)
 
 **▲図2▲ 偶数段と奇数段でキューブの配置を半分ずらして積み上げる**
 
 4. **箱の向き**: `hpr` パラメータで箱の向きを設定しています。これにより、すべての箱が円の中心を向くようになります（▲図3▲）。
   - `hpr`: Heading, Pitch, Roll の略で、Y軸、X軸、Z軸の回転角度を表します。
 
-![Column Building](https://creativival.github.io/CubicPy/assets/rotate_cube_add_angle.png)
+![Column Building](https://creativival.github.io/CubicPyCode/assets/rotate_cube_add_angle.png)
 
 **▲図3▲ キューブを「位置の角度」で回転させることで中心に向ける**
 
@@ -97,7 +97,7 @@ for j in range(height):
 
 5. **色の変化**: `color: (j / height, 0, 1 - j / height)` の部分で、下から上に向かって赤から青へのグラデーションを作っています（▲図4▲）。
 
-![Cylinder Tower](https://creativival.github.io/CubicPy/assets/box_cylinder_shape_tower.png)
+![Cylinder Tower](https://creativival.github.io/CubicPyCode/assets/box_cylinder_shape_tower.png)
 
 **▲図4▲ 箱を円形に配置した円柱タワー**
 
@@ -107,7 +107,7 @@ for j in range(height):
 
 次は、本格的な高層ビルのような建物を作ってみましょう。柱（コラム）と梁（ビーム）で構成される建築物です。この建築物の構想を「フレーム構造」と呼びます。
 
-![Column Building](https://creativival.github.io/CubicPy/assets/column_building_2x2_sample.png)
+![Column Building](https://creativival.github.io/CubicPyCode/assets/column_building_2x2_sample.png)
 
 **▲図5▲ 柱と床で構成されたフレーム構造ビル**
 
@@ -183,7 +183,7 @@ for k in range(step_num):
 
 最後に、幾何学的な美しさを持つピラミッド型のフレーム構造を作ります。
 
-![Pyramid Frame](https://creativival.github.io/CubicPy/assets/cube_pyramid_frame.png)
+![Pyramid Frame](https://creativival.github.io/CubicPyCode/assets/cube_pyramid_frame.png)
 
 **▲図6▲ ピラミッドのフレーム構造**
 

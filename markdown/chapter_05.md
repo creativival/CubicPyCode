@@ -1,6 +1,6 @@
 # 第5回：キューブドミノ倒し選手権
 
-![CubicPy Logo](https://creativival.github.io/CubicPy/assets/cubicpy_logo.png)
+![CubicPy Logo](https://creativival.github.io/CubicPyCode/assets/cubicpy_logo.png)
 
 ## 今日のミッション
 **一押しで連鎖反応！最後まで倒れるかドキドキの瞬間を作り出せ！**
@@ -60,7 +60,7 @@ for i in range(num_dominoes):
 cubicpy simple_domino.py
 ```
 
-![Simple Domino](https://creativival.github.io/CubicPy/assets/simple_domino.png)
+![Simple Domino](https://creativival.github.io/CubicPyCode/assets/simple_domino.png)
 
 **▲図1▲ 基本的な直線ドミノと発射ボール**
 
@@ -123,7 +123,7 @@ for i in range(num_dominoes):
 cubicpy circular_domino.py
 ```
 
-![Circular Domino](https://creativival.github.io/CubicPy/assets/circular_domino.png)
+![Circular Domino](https://creativival.github.io/CubicPyCode/assets/circular_domino.png)
 
 **▲図2▲ 円形に配置されたドミノ**
 
@@ -175,7 +175,7 @@ for i in range(num_dominoes):
 cubicpy spiral_domino.py
 ```
 
-![Spiral Domino](https://creativival.github.io/CubicPy/assets/spiral_domino.png)
+![Spiral Domino](https://creativival.github.io/CubicPyCode/assets/spiral_domino.png)
 
 **▲図3▲ 螺旋状に配置されたドミノ**
 
@@ -311,7 +311,7 @@ u_l_end = create_s_pattern((0, 0), 20, 10, (0.8, 0.2, 0.2), body_data)
 cubicpy domino_patterns.py
 ```
 
-![Domino Patterns](https://creativival.github.io/CubicPy/assets/domino_patterns.png)
+![Domino Patterns](https://creativival.github.io/CubicPyCode/assets/domino_patterns.png)
 
 **▲図4▲ 複数のパターンを組み合わせたドミノ配列**
 
@@ -390,7 +390,7 @@ cubicpy list_pattern_domino.py
 
 このコードを実行すると、迷路の形にドミノが配置され、最初のドミノを倒すためのボールが用意されます。スペースキーを押すと、迷路の通路に沿ってドミノが連鎖的に倒れていきます。
 
-![List Pattern Domino](https://creativival.github.io/CubicPy/assets/list_pattern_domino.png)
+![List Pattern Domino](https://creativival.github.io/CubicPyCode/assets/list_pattern_domino.png)
 
 **▲図5▲ 迷路パターンに配置されたドミノ**
 

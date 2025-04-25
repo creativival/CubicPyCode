@@ -1,6 +1,6 @@
 # 第1回：キューパイの世界へ飛び込もう！
 
-![CubicPy Logo](https://creativival.github.io/CubicPy/assets/cubicpy_logo.png)
+![CubicPy Logo](https://creativival.github.io/CubicPyCode/assets/cubicpy_logo.png)
 
 ## 今日のミッション
 **3Dの世界でプログラミングの第一歩を踏み出そう！**
@@ -11,7 +11,7 @@
 
 実はね、普通のプログラミングだと「画面に文字を表示する」とか「計算する」とか、ちょっと地味なことから始めることが多いんだ。でも、キューパイなら最初から3D世界で遊べるんだよ！
 
-![CubicPy Sample Animation](https://creativival.github.io/CubicPy/assets/cubicpy_sample.gif)
+![CubicPy Sample Animation](https://creativival.github.io/CubicPyCode/assets/cubicpy_sample.gif)
 
 **▲図1▲ キューパイのサンプルアニメーション**
 
@@ -37,7 +37,7 @@ Pythonはプログラミング言語のひとつで、キューパイを動か�
 
 Windowsの場合は、Pythonをインストールする必要があります。 インストール方法は簡単です。
 
-![Python Official Download](https://creativival.github.io/CubicPy/assets/python_official_download.png)
+![Python Official Download](https://creativival.github.io/CubicPyCode/assets/python_official_download.png)
 
 **▲図2▲ Pythonの公式ダウンロードページ**
 
@@ -78,7 +78,7 @@ python3 -V
 
 Pythonのバージョン番号が表示されたら、Pythonが正しくインストールされています。次に、キューパイをインストールします。
 
-![Windows PowerShell](https://creativival.github.io/CubicPy/assets/terminal_pip3_install_cubicpy.png)
+![Windows PowerShell](https://creativival.github.io/CubicPyCode/assets/terminal_pip3_install_cubicpy.png)
 
 **▲図3▲ WindowsのPowerShell**
 
@@ -88,7 +88,7 @@ Pythonのバージョン番号が表示されたら、Pythonが正しくイン�
 pip install cubicpy
 ```
 
-![Mac Terminal](https://creativival.github.io/CubicPy/assets/terminal_pip3_install_cubicpy.png)
+![Mac Terminal](https://creativival.github.io/CubicPyCode/assets/terminal_pip3_install_cubicpy.png)
 
 **▲図4▲ Macのターミナル**
 
@@ -105,7 +105,7 @@ pip3 install cubicpy
 
 ## 最初の呪文を唱えよう
 
-![Cube Tower](https://creativival.github.io/CubicPy/assets/cube_tower.png)
+![Cube Tower](https://creativival.github.io/CubicPyCode/assets/cube_tower.png)
 
 **▲図5▲ ランダムで選ばれたサンプルプログラムの一例**
 
@@ -130,7 +130,7 @@ cubicpy
 > - **R**: リセット
 > - **ESC**: 終了
 
-![Breaking Cube Tower](https://creativival.github.io/CubicPy/assets/breaking_cube_tower_sample.png)
+![Breaking Cube Tower](https://creativival.github.io/CubicPyCode/assets/breaking_cube_tower_sample.png)
 
 **▲図6▲ 床を傾けて、キューブ建築を破壊する**
 
@@ -147,7 +147,7 @@ cubicpy -l
 ```
 と入力します。すると、たくさんのサンプルが表示されます（▲図7▲）。
 
-![Sample List](https://creativival.github.io/CubicPy/assets/display_sample_list.png)
+![Sample List](https://creativival.github.io/CubicPyCode/assets/display_sample_list.png)
 
 **▲図7▲ 初めから用意されているサンプルプログラムのリストを表示する**
 
@@ -171,19 +171,19 @@ cubicpyコマンドはこれまで示したもの以外にも、複数の機能�
 
 1. **ピラミッドのフレーム**：簡単なプログラムから、立体的な作品を作ることができます。
 
-![Pyramid Frame](https://creativival.github.io/CubicPy/assets/cube_pyramid_frame.png)
+![Pyramid Frame](https://creativival.github.io/CubicPyCode/assets/cube_pyramid_frame.png)
 
 **▲図8▲ ピラミッドのフレーム**
 
 2. **円錐（コーン）の塔**：徐々に半径を小さくすることで、円錐の形を作ることができます。
 
-![Pyramid Frame](https://creativival.github.io/CubicPy/assets/cube_cone.png)
+![Pyramid Frame](https://creativival.github.io/CubicPyCode/assets/cube_cone.png)
 
 **▲図9▲ 円錐の塔**
 
 3. **ねじれた塔**：トグロをまく蛇ような塔を作ることもできます。
 
-![Pyramid Frame](https://creativival.github.io/CubicPy/assets/cube_twisted_tower.png)
+![Pyramid Frame](https://creativival.github.io/CubicPyCode/assets/cube_twisted_tower.png)
 
 **▲図10▲ ねじれた塔**
 

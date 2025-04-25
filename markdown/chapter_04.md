@@ -1,6 +1,6 @@
 # 第4回：街を作って、隕石で破壊しよう！
 
-![CubicPy Logo](https://creativival.github.io/CubicPy/assets/cubicpy_logo.png)
+![CubicPy Logo](https://creativival.github.io/CubicPyCode/assets/cubicpy_logo.png)
 
 ## 今日のミッション
 **自分だけの3D都市を作って、巨大な隕石で粉々に粉砕する！**
@@ -122,7 +122,7 @@ five_buildings.pyを保存して実行すると、ランダムな位置と大き
 cubicpy -g 0.1 five_buildings.py
 ```
 
-![Random Buildings](https://creativival.github.io/CubicPy/assets/five_random_buildings.png)
+![Random Buildings](https://creativival.github.io/CubicPyCode/assets/five_random_buildings.png)
 
 **▲図1▲ ランダムな位置と大きさのビル**
 
@@ -236,7 +236,7 @@ simple_district.pyを保存して実行すると、区画内にビルが配置�
 cubicpy -g 0.1 simple_district.py
 ```
 
-![Simple District](https://creativival.github.io/CubicPy/assets/simple_district.png)
+![Simple District](https://creativival.github.io/CubicPyCode/assets/simple_district.png)
 
 **▲図2▲ 単一区画に配置されたビル群**
 
@@ -425,7 +425,7 @@ create_city_100x100.pyを保存して実行すると、巨大な都市が生成�
 cubicpy -g 0.1 create_city_100x100.py
 ```
 
-![City Generation](https://creativival.github.io/CubicPy/assets/create_city_100x100.png)
+![City Generation](https://creativival.github.io/CubicPyCode/assets/create_city_100x100.png)
 
 **▲図3▲ 自動生成された巨大都市**
 
@@ -470,7 +470,7 @@ body_data.append({
 cubicpy -g 0.1 create_city_100x100_with_meteor.py
 ```
 
-![Meteor Impact](https://creativival.github.io/CubicPy/assets/create_city_100x100_with_meteor.png)
+![Meteor Impact](https://creativival.github.io/CubicPyCode/assets/create_city_100x100_with_meteor.png)
 
 **▲図4▲ 隕石が都市に衝突する瞬間**
 

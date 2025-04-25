@@ -1,6 +1,6 @@
 # 第6回：APIモードでパワーアップ！
 
-![CubicPy Logo](https://creativival.github.io/CubicPy/assets/cubicpy_logo.png)
+![CubicPy Logo](https://creativival.github.io/CubicPyCode/assets/cubicpy_logo.png)
 
 ## 今日のミッション
 **プログラマーの新しい魔法の杖、APIモードをマスターして、より自由な3D世界を作り出そう！**
@@ -55,7 +55,7 @@ python simple_api.py
 
 画面に赤い箱が表示されましたか（▲図1▲）？おめでとうございます！これがAPIモードでの最初のステップです。
 
-![Simple API Example](https://creativival.github.io/CubicPy/assets/simple_api_mode.png)
+![Simple API Example](https://creativival.github.io/CubicPyCode/assets/simple_api_mode.png)
 
 **▲図1▲ APIモードで作成した最初のキューブ**
 
@@ -126,7 +126,7 @@ app.run()
 python shape_methods.py
 ```
 
-![Shape Methods](https://creativival.github.io/CubicPy/assets/shape_methods.png)
+![Shape Methods](https://creativival.github.io/CubicPyCode/assets/shape_methods.png)
 
 **▲図2▲ 3種類の基本形状**
 
@@ -223,7 +223,7 @@ python house_with_matrix.py
 
 3つの三角屋根の家が簡単に建築できました（▲図3▲）。座標変換`push_matrix()`と`pop_matrix()`を使うことで、各家の位置を簡単に指定できることがわかります。次に、屋根の中心に座標変換することで、屋根の階段を簡単に積み上げられます。
 
-![Houses with Matrix](https://creativival.github.io/CubicPy/assets/houses_with_matrix.png)
+![Houses with Matrix](https://creativival.github.io/CubicPyCode/assets/houses_with_matrix.png)
 
 **▲図3▲ 座標変換を使用して作成した3つの家**
 
@@ -272,7 +272,7 @@ app.run()
 python thrower_with_text_display.py
 ```
 
-![Text Display](https://creativival.github.io/CubicPy/assets/thrower_with_text_display.png)
+![Text Display](https://creativival.github.io/CubicPyCode/assets/thrower_with_text_display.png)
 
 **▲図5▲ 画面上にテキストを表示した投擲機シミュレーション**
 
@@ -520,7 +520,7 @@ app.run()
 python japanese_shrine.py
 ```
 
-![Japanese Shrine](https://creativival.github.io/CubicPy/assets/japanese_shrine.png)
+![Japanese Shrine](https://creativival.github.io/CubicPyCode/assets/japanese_shrine.png)
 
 **▲図6▲ APIモードで作成した日本の神社モデル**
 
