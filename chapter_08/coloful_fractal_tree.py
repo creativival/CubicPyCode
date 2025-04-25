@@ -2,6 +2,9 @@ from cubicpy import CubicPyApp
 
 app = CubicPyApp(gravity_factor=0.1, window_size=(1800, 1200))
 
+# 最大繰り返し回数をグローバル変数として定義
+max_branch_count = 6
+
 # 分岐の深さに基づいて色を計算する関数
 def calculate_branch_color(branch_count, max_count):
     # branch_countが大きいほど幹に近く、小さいほど先端に近い
@@ -21,12 +24,12 @@ def draw_branch(length, branch_count, branch_factor):
     # 色と太さを計算
     color = calculate_branch_color(branch_count, max_branch_count)
     
-    # 木の幹を作成（太さも分岐レベルに応じて細くなる）
+    # 木の幹を作成
     app.add_cylinder(
         position=(0, 0, 1),
         scale=(0.5, 0.5, length - 1),
         color=color,
-        base_point=1  # 重心を基準に配置
+        base_point=1  # 底面中心を基準に配置
     )
 
     # 次の枝の分岐点まで移動
@@ -49,7 +52,6 @@ def draw_branch(length, branch_count, branch_factor):
 
 # 木を描画
 initial_length = 20     # 幹の長さ
-max_branch_count = 6
 branch_factor = 0.6     # 枝の長さの縮小率
 
 # 説明テキストを追加

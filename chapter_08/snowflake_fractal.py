@@ -11,8 +11,8 @@ def draw_snowflake_branch(length, depth, factor):
     
     # メインの枝を作成
     app.add_cube(
-        position=(0, depth * 0.2, length  * 0.1),
-        scale=(0.2, 0.2,length  * 0.8),
+        position=(0, depth * 0.2, length * 0.1),
+        scale=(0.2, 0.2,length * 0.8),
         color=(0.9, 0.9, 1.0),  # 白色（青みがかった）
         base_point=1  # 底面中心を基準に配置
     )
@@ -48,7 +48,7 @@ snowflake_factor = 0.4
 
 # 雪の結晶を描画
 app.push_matrix()
-app.translate(0, 0, 20)
+app.translate(0, 0, 20)  # 描き始めを高さ20に移動する
 draw_snowflake(snowflake_size, snowflake_depth, snowflake_factor)
 app.pop_matrix()
 # シミュレーションを実行

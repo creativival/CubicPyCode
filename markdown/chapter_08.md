@@ -53,12 +53,12 @@ def draw_branch(length, branch_count, branch_factor):
     if branch_count < 1:
         return
 
-    # 木の幹を作成（太さも分岐レベルに応じて細くなる）
+    # 木の幹を作成
     app.add_cylinder(
         position=(0, 0, 1),
         scale=(0.5, 0.5, length - 1),
         color=(0, 1, 0),
-        base_point=1  # 重心を基準に配置
+        base_point=1  # 底面中心を基準に配置
     )
 
     # 次の枝の分岐点まで移動
@@ -122,12 +122,12 @@ if branch_count < 1:
 #### 2. 枝（円柱）の作成
 
 ```python
-    # 木の幹を作成（太さも分岐レベルに応じて細くなる）
+    # 木の幹を作成
     app.add_cylinder(
         position=(0, 0, 1),
         scale=(0.5, 0.5, length - 1),
         color=(0, 1, 0),
-        base_point=1  # 重心を基準に配置
+        base_point=1  # 底面中心を基準に配置
     )
 ```
 
@@ -175,6 +175,9 @@ from cubicpy import CubicPyApp
 
 app = CubicPyApp(gravity_factor=0.1, window_size=(1800, 1200))
 
+# 最大繰り返し回数をグローバル変数として定義
+max_branch_count = 6
+
 # 分岐の深さに基づいて色を計算する関数
 def calculate_branch_color(branch_count, max_count):
     # branch_countが大きいほど幹に近く、小さいほど先端に近い
@@ -194,12 +197,12 @@ def draw_branch(length, branch_count, branch_factor):
     # 色と太さを計算
     color = calculate_branch_color(branch_count, max_branch_count)
     
-    # 木の幹を作成（太さも分岐レベルに応じて細くなる）
+    # 木の幹を作成
     app.add_cylinder(
         position=(0, 0, 1),
         scale=(0.5, 0.5, length - 1),
         color=color,
-        base_point=1  # 重心を基準に配置
+        base_point=1  # 底面中心を基準に配置
     )
 
     # 次の枝の分岐点まで移動
@@ -222,7 +225,6 @@ def draw_branch(length, branch_count, branch_factor):
 
 # 木を描画
 initial_length = 20     # 幹の長さ
-max_branch_count = 6
 branch_factor = 0.6     # 枝の長さの縮小率
 
 # 説明テキストを追加
@@ -283,8 +285,8 @@ def draw_snowflake_branch(length, depth, factor):
     
     # メインの枝を作成
     app.add_cube(
-        position=(0, depth * 0.2, length  * 0.1),
-        scale=(0.2, 0.2,length  * 0.8),
+        position=(0, depth * 0.2, length * 0.1),
+        scale=(0.2, 0.2,length * 0.8),
         color=(0.9, 0.9, 1.0),  # 白色（青みがかった）
         base_point=1  # 底面中心を基準に配置
     )
@@ -320,7 +322,7 @@ snowflake_factor = 0.4
 
 # 雪の結晶を描画
 app.push_matrix()
-app.translate(0, 0, 20)
+app.translate(0, 0, 20)  # 描き始めを高さ20に移動する
 draw_snowflake(snowflake_size, snowflake_depth, snowflake_factor)
 app.pop_matrix()
 # シミュレーションを実行
@@ -337,7 +339,19 @@ python snowflake_fractal.py
 
 **▲図3▲ フラクタルパターンの雪の結晶**
 
-雪の結晶のコードでは、6回対称性を表現するために、メインの関数（`draw_snowflake`）が6方向に分岐した枝（`draw_snowflake_branch`）を配置しています。各枝は再帰的にさらに小さな枝を生み出し、典型的な雪の結晶のパターンを形成します。
+```
+# 6回対称の雪の結晶を描画する関数
+def draw_snowflake(size, depth, factor):
+    for i in range(6):
+        app.push_matrix()
+        app.rotate_hpr(0, 0, i * 60 + 30)  # Z軸周りに60度ずつ回転
+        draw_snowflake_branch(size, depth, factor)
+        app.pop_matrix()
+```
+
+雪の結晶のコードでは、6回対称性を表現するために、メインの関数（`draw_snowflake`）が6方向に分岐した枝（`draw_snowflake_branch`）を配置しています。`app.rotate_hpr(0, 0, i * 60 + 30)` により、Y軸中心で回転を行います。
+
+各枝は再帰的にさらに小さな枝を生み出し、典型的な雪の結晶のパターンを形成します。
 
 ## チャレンジ：オリジナルの立体フラクタル作品を創ろう
 

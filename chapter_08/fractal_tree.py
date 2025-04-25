@@ -7,12 +7,12 @@ def draw_branch(length, branch_count, branch_factor):
     if branch_count < 1:
         return
 
-    # 木の幹を作成（太さも分岐レベルに応じて細くなる）
+    # 木の幹を作成
     app.add_cylinder(
         position=(0, 0, 1),
         scale=(0.5, 0.5, length - 1),
         color=(0, 1, 0),
-        base_point=1  # 重心を基準に配置
+        base_point=1  # 底面中心を基準に配置
     )
 
     # 次の枝の分岐点まで移動
