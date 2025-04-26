@@ -29,7 +29,7 @@ for j in range(height):
 
         pos = (x, y, z)  # ボックスの下端がZ=0から始まるように調整
         body_data.append({
-            'type': 'box',
+            'type': 'cube',
             'pos': pos,
             'scale': (box_size, box_size, box_size),  # X方向の幅とZ方向の高さを適切に設定
             'color': (j / height, 0, 1 - j / height),  # 塔の高さに応じて色を変える

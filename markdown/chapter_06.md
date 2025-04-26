@@ -223,7 +223,7 @@ python house_with_matrix.py
 
 3つの三角屋根の家が簡単に建築できました（▲図3▲）。座標変換`push_matrix()`と`pop_matrix()`を使うことで、各家の位置を簡単に指定できることがわかります。次に、屋根の中心に座標変換することで、屋根の階段を簡単に積み上げられます。
 
-![Houses with Matrix](https://creativival.github.io/CubicPyCode/assets/houses_with_matrix.png)
+![Houses with Matrix](https://creativival.github.io/CubicPyCode/assets/house_with_matrix.png)
 
 **▲図3▲ 座標変換を使用して作成した3つの家**
 
@@ -274,7 +274,7 @@ python thrower_with_text_display.py
 
 ![Text Display](https://creativival.github.io/CubicPyCode/assets/thrower_with_text_display.png)
 
-**▲図5▲ 画面上にテキストを表示した投擲機シミュレーション**
+**▲図4▲ 画面上にテキストを表示した投擲機シミュレーション**
 
 > 💡 **先生からのヒント**: テキスト表示は、あなたが作ったアプリケーションをより使いやすくするために重要です。特に複雑な操作が必要なゲームやシミュレーションでは、ユーザーへの指示を表示するのに役立ちます！
 
@@ -458,6 +458,7 @@ def create_shrine(pos_x, pos_y, size):
     app.push_matrix()
     app.translate(0, -(platform_depth + size), path_height)
 
+    # 左右の石灯籠を配置
     for side in [-1, 1]:
         app.push_matrix()
         app.translate(side * lantern_dist / 2, 0, 0)
@@ -522,7 +523,7 @@ python japanese_shrine.py
 
 ![Japanese Shrine](https://creativival.github.io/CubicPyCode/assets/japanese_shrine.png)
 
-**▲図6▲ APIモードで作成した日本の神社モデル**
+**▲図5▲ APIモードで作成した日本の神社モデル**
 
 > 🔍 **発見ポイント**: 実際の建築物をモデル化するとき、単純な形状の組み合わせで複雑な形を表現することが重要です。座標変換を使うことで、全体の構造を把握しながら細部を作り込むことができます！
 

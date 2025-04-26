@@ -69,8 +69,8 @@ def create_arc_dominoes(center, radius, start_angle, end_angle, color, target_da
     return points[0], points[-1]
 
 
-# 複合パターン：「S」字型のドミノ配列
-def create_s_pattern(start_pos, length, width, color, target_data, _create_line_dominoes=create_line_dominoes, _create_arc_dominoes=create_arc_dominoes):
+# 複合パターン：「LU」字型のドミノ配列
+def create_l_u_pattern(start_pos, length, width, color, target_data, _create_line_dominoes=create_line_dominoes, _create_arc_dominoes=create_arc_dominoes):
     print("create_s_pattern")
     # 最初の直線
     line1_end = _create_line_dominoes(start_pos, length / 2, 0, 1, color, target_data, start_line=True)
@@ -107,7 +107,7 @@ def create_s_pattern(start_pos, length, width, color, target_data, _create_line_
 
     return line3_end
 
-# U字L字接続パターン
-u_l_end = create_s_pattern((0, 0), 20, 10, (0.8, 0.2, 0.2), body_data)
+# LU字接続パターン
+l_u_end = create_l_u_pattern((0, 0), 20, 10, (0.8, 0.2, 0.2), body_data)
 
 # ここに続きのパターンを追加

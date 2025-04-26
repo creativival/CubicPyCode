@@ -35,10 +35,8 @@ domino_thickness = 0.2
 num_list = len(list_pattern)
 for i, row in enumerate(list_pattern):
     y = (num_list - i - 1) * domino_width / 2   # 上から下に向かうため、y座標を反転
-    print(y, row)
 
     for j, dot in enumerate(list(row)):
-        print(dot)
         if dot == '1':
             body_data.append({
                 'type': 'cube',

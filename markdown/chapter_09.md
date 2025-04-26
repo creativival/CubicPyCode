@@ -77,7 +77,7 @@ Scratch3からCubicPyへの接続を確立するには、以下の手順を行�
 1. Scratch3で「ルーム名を〜に接続する」ブロックを使用
 2. CubicPy画面に表示されているルーム番号を入力
 3. スペースキーを押す、または、ブロックをダブルクリックして、スクリプトを実行すると、Webscoket通信でCubicPyとの通信が行われます。
-4. 接続が成功したら、キューブでできた「ハシゴ」が建築されます。
+4. 接続が成功したら、CubicPyの画面にキューブでできた「ハシゴ」が建築されます。
 
 ![Sample Ladder Script](https://creativival.github.io/CubicPyCode/assets/sample_ladder.png)
 
@@ -108,11 +108,11 @@ Scratch3からCubicPyを操作するための基本的なブロックを見て�
 
 ### 簡単な建物を作るプログラム
 
-それでは、Scratch3を使って簡単な建物を作るプログラムを作ってみましょう。以下は、そのScratch3のプログラム例です：
+それでは、Scratch3を使って簡単な建物を作るプログラムを作ってみましょう。縦横高さが10x10x10の中空のビルを建築します。以下は、そのScratch3のプログラム例です：
 
 ![Simple Building Program](https://creativival.github.io/CubicPyCode/assets/cube_10x10x10_script.png)
 
-**▲図4▲ Scratch3での簡単な建物プログラム**
+**▲図4▲ Scratch3での中空の立方体（ビル）を作るプログラム**
 
 このプログラムでは、以下のことを行っています：
 
@@ -121,11 +121,11 @@ Scratch3からCubicPyを操作するための基本的なブロックを見て�
 4. 三重ループを使って、10x10x10の立方体（ビル）を作成
 5. データを送信
 
-プログラムを実行すると、CubicPyの画面に簡単な小屋が表示されるはずです。条件式を使って、中空のビルが建築できました。
+プログラムを実行すると、CubicPyの画面に簡単な建物が表示されるはずです。条件式を使って、中空のビルが建築できました。
 
 ![Simple Building Program](https://creativival.github.io/CubicPyCode/assets/cube_10x10x10.png)
 
-**▲図5▲ Scratch3での簡単な建物**
+**▲図5▲ Scratch3での中空の立方体（ビル）**
 
 > 💡 **先生からのヒント**: Scratch3のブロックは、マウスでドラッグ＆ドロップで組み立てるので、プログラミング初心者でも直感的に操作できるよ！
 
@@ -148,13 +148,13 @@ Scratch3には「タートルプログラミング」という方式もありま
 3. スペースキーを押す、または、ブロックをダブルクリックして、スクリプトを実行すると、Webscoket通信でCubicPyとの通信が行われます。
 4. 接続が成功したら、キューブでできた「ペン立て」が建築されます。
 
-![Turtle Sample](https://creativival.github.io/CubicPyCode/assets/turtle_sample.png)
+![Turtle Sample](https://creativival.github.io/CubicPyCode/assets/turtle_sample_script.png)
 
 **▲図6▲ タートルプログラミング方式でのScratch3プログラム**
 
 タートルプログラミングを使うには、「Voxelamming-turtle」拡張を追加する必要があります。この方式では、以下のブロックを使用します。
 
-![Sample Ladder](https://creativival.github.io/CubicPyCode/assets/turtle_sample_script.png)
+![Sample Ladder](https://creativival.github.io/CubicPyCode/assets/turtle_sample.png)
 
 **▲図7▲ ペン立ての建築のサンプルスクリプト**
 
@@ -182,7 +182,7 @@ Scratch3には「タートルプログラミング」という方式もありま
 
 ![Turtle Spiral](https://creativival.github.io/CubicPyCode/assets/turtle_spiral.png)
 
-**▲図9▲ Scratch3でのフラクタルツリープログラム**
+**▲図9▲ Scratch3でのタートルプログラミングで作成した螺旋階段**
 
 このプログラムを実行すると、CubicPyの3D世界に美しい螺旋階段が現れるでしょう。
 
@@ -194,7 +194,7 @@ Scratch3には「タートルプログラミング」という方式もありま
 
 1. 角度を上向きに少しずつ変えながら、前に進む
 2. 円が描けたら、原点に戻る
-3. 右向きに角度を変えて、1を繰り返す
+3. 右に45度向きを変えて、別の円を描く。これを繰り返して立体的な鳥籠を形成する
 
 以下は、Scratch3でのタートルプログラミングによる鳥籠プログラムの例です：
 

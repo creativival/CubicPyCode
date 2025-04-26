@@ -13,7 +13,7 @@ for i in range(step_num):
   # 4つの辺を作成
   pos = (x, y, z)
   body_data.append({
-    'type': 'box',
+    'type': 'cube',
     'pos': pos,
     'scale': (1, 1, 1),
     'color': (1, 0, 0),
@@ -24,7 +24,7 @@ for i in range(step_num):
   if i != step_num - 1:
     pos = (-x, y, z)
     body_data.append({
-      'type': 'box',
+      'type': 'cube',
       'pos': pos,
       'scale': (1, 1, 1),
       'color': (1, 0, 0),
@@ -33,7 +33,7 @@ for i in range(step_num):
 
     pos = (x, -y, z)
     body_data.append({
-      'type': 'box',
+      'type': 'cube',
       'pos': pos,
       'scale': (1, 1, 1),
       'color': (1, 0, 0),
@@ -42,7 +42,7 @@ for i in range(step_num):
 
     pos = (-x, -y, z)
     body_data.append({
-      'type': 'box',
+      'type': 'cube',
       'pos': pos,
       'scale': (1, 1, 1),
       'color': (1, 0, 0),

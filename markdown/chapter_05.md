@@ -64,7 +64,7 @@ cubicpy simple_domino.py
 
 **▲図1▲ 基本的な直線ドミノと発射ボール**
 
-3D世界が表示されたら、スペースキーを押してボールを発射してみてください。上手くいけば、ボールが最初のドミノに当たり、それが次々と倒れていくでしょう。
+3D世界が表示されたら、スペースキーを押して、一つ目のドミノを倒してみてください。上手くいけば、2つ目のドミノに当たり、それが次々と倒れていくでしょう。
 
 > 💡 **先生からのヒント**: ドミノが倒れない場合は、`spacing`（ドミノ間の距離）を調整してみよう。近すぎると最初から倒れてしまい、遠すぎると連鎖が途切れてしまうよ！
 
@@ -261,8 +261,8 @@ def create_arc_dominoes(center, radius, start_angle, end_angle, color, target_da
     return points[0], points[-1]
 
 
-# 複合パターン：「S」字型のドミノ配列
-def create_s_pattern(start_pos, length, width, color, target_data, _create_line_dominoes=create_line_dominoes, _create_arc_dominoes=create_arc_dominoes):
+# 複合パターン：「LU」字型のドミノ配列
+def create_l_u_pattern(start_pos, length, width, color, target_data, _create_line_dominoes=create_line_dominoes, _create_arc_dominoes=create_arc_dominoes):
     print("create_s_pattern")
     # 最初の直線
     line1_end = _create_line_dominoes(start_pos, length / 2, 0, 1, color, target_data, start_line=True)
@@ -299,8 +299,8 @@ def create_s_pattern(start_pos, length, width, color, target_data, _create_line_
 
     return line3_end
 
-# U字L字接続パターン
-u_l_end = create_s_pattern((0, 0), 20, 10, (0.8, 0.2, 0.2), body_data)
+# LU字接続パターン
+l_u_end = create_l_u_pattern((0, 0), 20, 10, (0.8, 0.2, 0.2), body_data)
 
 # ここに続きのパターンを追加
 ```
@@ -367,10 +367,8 @@ domino_thickness = 0.2
 num_list = len(list_pattern)
 for i, row in enumerate(list_pattern):
     y = (num_list - i - 1) * domino_width / 2   # 上から下に向かうため、y座標を反転
-    print(y, row)
 
     for j, dot in enumerate(list(row)):
-        print(dot)
         if dot == '1':
             body_data.append({
                 'type': 'cube',
@@ -382,7 +380,7 @@ for i, row in enumerate(list_pattern):
             })
 ```
 
-このコードでは、テキストで定義されたリストパターンに沿ってドミノを配置しています（▲図5▲）。ドミノは配置は「0」「1」のドットで表現され、1の部分にドミノが配置されます。迷路のような形状を作ることができます。次のコードを実行します。
+このコードでは、テキストで定義されたリストパターンに沿ってドミノを配置しています（▲図5▲）。ドミノの配置は「0」「1」のドットで表現され、1の部分にドミノが配置されます。このリストにより分岐ドミノ形状を作成できます。次のコードを実行します。
 
 ```bash
 cubicpy list_pattern_domino.py
@@ -441,7 +439,7 @@ cubicpy list_pattern_domino.py
 
 ## 次回予告
 
-次回は「発射体でボーリングゲームを作ろう！」です。物理シミュレーションの世界をさらに広げ、ボーリングのピンとボールを作り、得点計算までできるゲームプログラムに挑戦します。力と角度を調整して、完璧なストライクを目指しましょう！
+次回は「APIモードでパワーアップ！」です。APIモードは、より自由度の高いプログラミング方法で、これまでの`body_data`リストを使う方法よりも多くの機能を直接制御できるようになります。オブジェクトの追加や削除、座標変換、テキスト表示など、より複雑な3D世界を作るための新しい魔法の杖を手に入れましょう！
 
 > 🎮 **宿題（やってみよう）**: 今回学んだパターンを組み合わせて、100個以上のドミノを使った大規模な連鎖反応を設計してみよう。最後まで倒れるように工夫し、途中で止まらないようにチャレンジしてみよう！
 

@@ -127,6 +127,7 @@ def create_shrine(pos_x, pos_y, size):
     app.push_matrix()
     app.translate(0, -(platform_depth + size), path_height)
 
+    # 左右の石灯籠を配置
     for side in [-1, 1]:
         app.push_matrix()
         app.translate(side * lantern_dist / 2, 0, 0)

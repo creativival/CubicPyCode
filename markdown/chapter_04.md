@@ -433,10 +433,10 @@ cubicpy -g 0.1 create_city_100x100.py
 
 ## 隕石の追加：破壊の準備
 
-さて、せっかく作った都市ですが…今度はこれを破壊する準備をします！都市に向かって落下する巨大隕石を追加しましょう。`city_with_meteor.py` という名前で新しいファイルを作成し、先ほどのコードの最後に以下のコードを追加してください。
+さて、せっかく作った都市ですが…今度はこれを破壊する準備をします！都市に向かって落下する巨大隕石を追加しましょう。`create_city_100x100.py` をコピーして、`city_with_meteor.py` という名前で保存します。そして。以下のコードを追加してください。
 
 ```python
-# create_city_100x100.pyのコードをここにコピー
+# create_city_100x100.pyの末尾に追記する
 
 # 隕石を生成
 body_data.append({
@@ -455,7 +455,7 @@ body_data.append({
 隕石のパラメータについて詳しく見ていきましょう。
 
 1. `'type': 'sphere'` - 球体として作成
-2. `'pos': (CITY_WIDTH / 2, CITY_LENGTH / 2, 200)` - 都市の中心上空200に配置
+2. `'pos': (CITY_WIDTH / 2, CITY_LENGTH / 2, 200)` - 都市の中心上空200ユニットに配置
 3. `'scale': (50, 50, 50)` - 直径100の巨大な球体
 4. `'color': (1, 1, 1)` - 白色
 5. `'mass': 100` - 非常に重い質量（標準は1）
@@ -467,10 +467,10 @@ body_data.append({
 完成したファイルを実行して、隕石衝突実験を行いましょう。以下のコマンドを実行してください。
 
 ```bash
-cubicpy -g 0.1 create_city_100x100_with_meteor.py
+cubicpy -g 0.1 city_with_meteor.py
 ```
 
-![Meteor Impact](https://creativival.github.io/CubicPyCode/assets/create_city_100x100_with_meteor.png)
+![Meteor Impact](https://creativival.github.io/CubicPyCode/assets/city_with_meteor.png)
 
 **▲図4▲ 隕石が都市に衝突する瞬間**
 
